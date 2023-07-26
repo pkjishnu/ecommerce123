@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} add{% endblock %}
+{% block content %}
+<div class="container" style="margin-bottom:100px;">
+    <h1> order details</h1>
+ TOTAL:   {{total}} Rupees<br>
+  STATUS:  {{msg}}<br>
+   QUANTITY: {{items}}<br>
+</div>
+{% endblock %}

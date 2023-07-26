@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<form method="POST">
+  {% csrf_token %}
+  <div class="mb-3">
+    <label class="form-label" >Address</label>
+    <input type="text" class="form-control" name="a" aria-describedby="address">
+
+  <div class="mb-3">
+    <label class="form-label" >Phonenumber:</label>
+    <input type="number" name="p" class="form-control" >
+  </div>
+      <div class="mb-3">
+    <label class="form-label" >accountnumber</label>
+    <input type="number" name="num" class="form-control" >
+  </div>
+    <input type="submit" class="btn btn-primary" >
+
+</form>
+
+{% endblock %}
